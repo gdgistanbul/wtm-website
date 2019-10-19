@@ -1,11 +1,30 @@
+
 <template>
   <v-content class="pa-0">
 
-    <v-container fluid class="my-4">
+    <v-container fluid class="my-4" >
+      <v-img
+                    :src="require('@/assets/img/background2.png')"
+                    :lazy-src="require('@/assets/img/background2.png')"
+                    width="100%">
+                    <v-layout
+                        slot="placeholder"
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                </v-img>
+    <v-container fluid class="my-6"  >
+  <p>   </p>
+</v-container>
       <v-layout wrap align-center justify-center row fill-height class="">
-        <v-flex xs12 md10 >
+        <v-flex xs12 md10  >
           <HomeStartScreen />
         </v-flex>
+        
       </v-layout>
     </v-container>
 
